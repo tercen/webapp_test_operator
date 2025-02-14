@@ -15,7 +15,6 @@ dependencies:
     sdk: flutter
 
 
-
   cupertino_icons: ^1.0.6
   jwt_decoder: ^2.0.1
   url_launcher: ^6.3.0
