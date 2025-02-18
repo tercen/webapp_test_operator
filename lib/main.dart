@@ -115,7 +115,7 @@ class _TwoColumnHomeState extends State<TwoColumnHome> with ProgressDialog {
             height: 100);
 
       // BASIC Initialization
-      await appData.init(app.projectId, app.projectName, app.username);
+      await appData.init(app.projectId, app.projectName, app.username, reposJsonPath: "assets/repos.json");
 
       //OR Advanced initialization with configuration files
       // await appData.init(app.projectId, app.projectName, app.username,
