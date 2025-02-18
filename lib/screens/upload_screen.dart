@@ -37,7 +37,6 @@ class _UploadDataScreenState extends State<UploadDataScreen>
   void initState() {
     super.initState();
 
-    print("Team name is: ${widget.modelLayer.app.teamname}");
     var uploadComponent = UploadTableComponent("uploadComp", getScreenId(), "Upload Files",
     widget.modelLayer.app.projectId, widget.modelLayer.app.teamname);
     addComponent("default", uploadComponent);
