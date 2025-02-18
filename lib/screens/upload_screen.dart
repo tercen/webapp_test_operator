@@ -46,7 +46,7 @@ class _UploadDataScreenState extends State<UploadDataScreen>
 
     var runWorkflowBtn = ButtonActionComponent(
         "runWorkflow", "Run Analysis", _runUmap);
-
+    
     addActionComponent( runWorkflowBtn);
 
 
@@ -66,7 +66,7 @@ class _UploadDataScreenState extends State<UploadDataScreen>
         WorkflowRunner runner = WorkflowRunner(
           widget.modelLayer.project.id,
           widget.modelLayer.teamname.id,
-          widget.modelLayer.getWorkflow("umap"));
+          widget.modelLayer.getWorkflow("umap_workflow"));
 
         runner.addTableDocument("f4d5e14a-6d75-4d44-ad77-7ae106bd9fb0", uploadedFile.id);
 
